@@ -5,9 +5,34 @@ description = ""
 readme = "README.md"
 requires-python = ">=3.13.9"
 dependencies = [
-    "pip>=25.2",
-    "django>=5.2.7",
-    "psycopg2-binary>=2.9.11",
-    "pillow>=12.0.0",
-    "python-dotenv>=1.1.1",
+    "pip>=25.2",                    # Package installer
+    "django>=5.2.7",                # Django web framework
+    "psycopg2-binary>=2.9.11",      # PostgreSQL database adapter
+    "pydantic[email]>=2.12.2",      # Pydantic
+    "pydantic-extra-types>=2.10.6", # Pydantic: Extra types
+    "pillow>=12.0.0",               # Image processing
+    "python-dotenv>=1.1.1",         # Environment variables
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.18.2",                    # Type checking: MyPy
+    "ty>=0.0.1a22",                    # Type checking: Ty
+    "pytest>=8.4.2",                   # Pytest
+    "pytest-asyncio>=1.2.0",           # Pytest: Asyncio support
+    "pytest-env>=1.2.0",               # Pytest: Environment variables
+    "pytest-cov>=7.0.0",               # Pytest: Coverage
+    "types-html5lib>=1.1.11.20251014", # MyPy plugins: HTML5lib
+    "types-requests>=2.32.4.20250913", # MyPy plugins: Requests
+    "types-aiofiles>=25.1.0.20251011", # MyPy plugins: Aiofiles
+    "django-stubs>=5.2.7",             # MyPy plugins: Django                   # MyPy plugins: Types-all
+]
+
+lint = [
+    "pre-commit>=4.3.0", # Pre-commit hooks
+]
+server = [
+    "granian>=2.5.5",   # Granian: ASGI server
+    "gunicorn>=23.0.0", # Gunicorn: WSGI server
+    "uvicorn>=0.37.0",  # Uvicorn: ASGI server
 ]
