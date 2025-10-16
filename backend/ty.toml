@@ -6,3 +6,4 @@ include = ["config", "main"]
 
 [rules]
 missing-argument = "ignore"
+unresolved-attribute = "ignore"
