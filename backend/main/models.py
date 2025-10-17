@@ -6,6 +6,10 @@ class Category(models.Model):
     name = models.CharField(max_length=100)
     slug = models.SlugField(unique=True)
 
+    class Meta:
+        verbose_name = "Category"
+        verbose_name_plural = "Categories"
+
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.name)
@@ -25,6 +29,10 @@ class Product(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        verbose_name = "Product"
+        verbose_name_plural = "Products"
+
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.name)
@@ -37,12 +45,20 @@ class Product(models.Model):
 class Size(models.Model):
     name = models.CharField(max_length=20)
 
+    class Meta:
+        verbose_name = "Size"
+        verbose_name_plural = "Sizes"
+
     def __str__(self):
         return self.name
 
 
 class Color(models.Model):
     name = models.CharField(max_length=30)
+
+    class Meta:
+        verbose_name = "Color"
+        verbose_name_plural = "Colors"
 
     def __str__(self):
         return self.name
