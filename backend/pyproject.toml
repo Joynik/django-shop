@@ -8,7 +8,7 @@ dependencies = [
     "pip>=25.2",                    # Package installer
     "django>=5.2.7",                # Django web framework
     "psycopg2-binary>=2.9.11",      # PostgreSQL database adapter
-    "pydantic[email]>=2.12.2",      # Pydantic
+    "pydantic[email]>=2.12.3",      # Pydantic
     "pydantic-extra-types>=2.10.6", # Pydantic: Extra types
     "pillow>=12.0.0",               # Image processing
     "python-dotenv>=1.1.1",         # Environment variables
@@ -17,7 +17,7 @@ dependencies = [
 [dependency-groups]
 dev = [
     "mypy>=1.18.2",                    # Type checking: MyPy
-    "ty>=0.0.1a22",                    # Type checking: Ty
+    "ty>=0.0.1a23",                    # Type checking: Ty
     "pytest>=8.4.2",                   # Pytest
     "pytest-asyncio>=1.2.0",           # Pytest: Asyncio support
     "pytest-env>=1.2.0",               # Pytest: Environment variables
