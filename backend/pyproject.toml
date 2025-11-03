@@ -17,7 +17,7 @@ dependencies = [
 [dependency-groups]
 dev = [
     "mypy>=1.18.2",                    # Type checking: MyPy
-    "ty>=0.0.1a24",                    # Type checking: Ty
+    "ty>=0.0.1a25",                    # Type checking: Ty
     "pytest>=8.4.2",                   # Pytest
     "pytest-asyncio>=1.2.0",           # Pytest: Asyncio support
     "pytest-env>=1.2.0",               # Pytest: Environment variables
@@ -32,7 +32,7 @@ lint = [
     "pre-commit>=4.3.0", # Pre-commit hooks
 ]
 server = [
-    "granian>=2.5.5",   # Granian: ASGI server
+    "granian>=2.5.6",   # Granian: ASGI server
     "gunicorn>=23.0.0", # Gunicorn: WSGI server
     "uvicorn>=0.38.0",  # Uvicorn: ASGI server
 ]
