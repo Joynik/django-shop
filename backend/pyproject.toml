@@ -6,9 +6,9 @@ readme = "README.md"
 requires-python = ">=3.13.9"
 dependencies = [
     "pip>=25.3",                    # Package installer
-    "django>=5.2.7",                # Django web framework
+    "django>=5.2.8",                # Django web framework
     "psycopg2-binary>=2.9.11",      # PostgreSQL database adapter
-    "pydantic[email]>=2.12.3",      # Pydantic
+    "pydantic[email]>=2.12.4",      # Pydantic
     "pydantic-extra-types>=2.10.6", # Pydantic: Extra types
     "pillow>=12.0.0",               # Image processing
     "python-dotenv>=1.2.1",         # Environment variables
@@ -32,7 +32,7 @@ lint = [
     "pre-commit>=4.3.0", # Pre-commit hooks
 ]
 server = [
-    "granian>=2.5.6",   # Granian: ASGI server
+    "granian>=2.5.7",   # Granian: ASGI server
     "gunicorn>=23.0.0", # Gunicorn: WSGI server
     "uvicorn>=0.38.0",  # Uvicorn: ASGI server
 ]
