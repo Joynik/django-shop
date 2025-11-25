@@ -29,7 +29,7 @@ dev = [
 ]
 
 lint = [
-    "pre-commit>=4.4.0", # Pre-commit hooks
+    "pre-commit>=4.5.0", # Pre-commit hooks
 ]
 server = [
     "granian>=2.6.0",   # Granian: ASGI server
