@@ -3,7 +3,7 @@ name = "django_backend"
 version = "0.0.1"
 description = ""
 readme = "README.md"
-requires-python = ">=3.13.10"
+requires-python = ">=3.13.11"
 dependencies = [
     "pip>=25.3",                    # Package installer
     "django>=6.0",                  # Django web framework
