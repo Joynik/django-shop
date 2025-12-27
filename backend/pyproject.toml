@@ -17,7 +17,7 @@ dependencies = [
 [dependency-groups]
 dev = [
     "mypy>=1.19.1",                    # Type checking: MyPy
-    "ty>=0.0.5",                       # Type checking: Ty
+    "ty>=0.0.7",                       # Type checking: Ty
     "pytest>=9.0.2",                   # Pytest
     "pytest-asyncio>=1.3.0",           # Pytest: Asyncio support
     "pytest-env>=1.2.0",               # Pytest: Environment variables
