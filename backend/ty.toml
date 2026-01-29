@@ -7,3 +7,4 @@ include = ["config", "main"]
 [rules]
 missing-argument = "ignore"
 unresolved-attribute = "ignore"
+unused-ignore-comment = "ignore"
