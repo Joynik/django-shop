@@ -16,6 +16,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "pip>=26.0",                       # Package installer
     "mypy>=1.19.1",                    # Type checking: MyPy
     "ty>=0.0.14",                      # Type checking: Ty
     "pytest>=9.0.2",                   # Pytest
@@ -25,7 +26,7 @@ dev = [
     "types-html5lib>=1.1.11.20251117", # MyPy plugins: HTML5lib
     "types-requests>=2.32.4.20260107", # MyPy plugins: Requests
     "types-aiofiles>=25.1.0.20251011", # MyPy plugins: Aiofiles
-    "django-stubs>=5.2.8",             # MyPy plugins: Django                   # MyPy plugins: Types-all
+    "django-stubs>=5.2.9",             # MyPy plugins: Django                   # MyPy plugins: Types-all
 ]
 
 lint = [
@@ -33,6 +34,6 @@ lint = [
 ]
 server = [
     "granian>=2.6.1",   # Granian: ASGI server
-    "gunicorn>=24.1.1", # Gunicorn: WSGI server
+    "gunicorn>=25.0.0", # Gunicorn: WSGI server
     "uvicorn>=0.40.0",  # Uvicorn: ASGI server
 ]
