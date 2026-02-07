@@ -35,6 +35,6 @@ lint = [
 
 server = [
     "granian>=2.7.0",   # Granian: ASGI server
-    "gunicorn>=25.0.1", # Gunicorn: WSGI server
+    "gunicorn>=25.0.2", # Gunicorn: WSGI server
     "uvicorn>=0.40.0",  # Uvicorn: ASGI server
 ]
